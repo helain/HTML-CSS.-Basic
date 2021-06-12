@@ -2,11 +2,36 @@ body {
     background-color: #f8f8f8;
 }
 
+.container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
 .header {
+    display: block;
+    height: 200px;
     background-color: aliceblue;
+    position: absolute top;
+    background-image: url(img/header_background.jpg);
+}
+
+.logo {
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .main_menu {
+    display: inline-block list-style-type: none;
+    position: relative right;
+    float: right;
+    margin-top: 20px;
+}
+
+.main_menu li {
+    display: inline;
     list-style-type: none;
 }
 
@@ -23,7 +48,7 @@ body {
     line-height: 20px
 }
 
-a {
+.main_menu a {
     color: blue;
     font-style: italic;
     font-size: 20px
@@ -87,21 +112,79 @@ h3 {
 .img_full {
     outline: 3px;
     outline-style: solid;
-    outline-color: darkblue
+    outline-color: darkblue;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
 }
 
 .img_full:hover {
     outline-style: none
 }
 
-.short_descr:first-letter {
+.short_descr {
+    display: inline-block;
+    margin-left: 10px;
+    width: 686px;
+    position: relative;
+}
+
+.short_descr p:first-letter {
     font-family: sans-serif;
     font-size: 25px;
     color: brown;
 }
 
-.full_descr:first-letter {
+.full_descr {
+    display: block;
+}
+
+.full_descr p:first-letter {
     font-family: monospace;
     font-size: 40px;
     color: red;
 }
+
+.footer {
+    height: 50px;
+    background-color: aliceblue;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.button_buy {
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    outline: solid 3px;
+    outline-color: darkblue;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    position: relative
+}
+
+.button_buy a {
+    border: none;
+}
+
+.button_buy:hover {
+    outline-color: blue;
+}
+
+.button_buy:active {
+    outline-color: red;
+}
+
+.char_block {
+    display: block;
+}
+
+.catalog_group {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
